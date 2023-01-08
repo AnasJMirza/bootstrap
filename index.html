@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding-top: 30px;
+      }
+
+      .box {
+        background-color: crimson;
+        /* height: 40px; */
+        /* padding: 10px; */
+        /* border: 2px solid black; */
+      }
+
+      .parent {
+        width: 400px;
+        height: 400px;
+        background-color: crimson;
+      }
+
+      .child {
+        width: 50%;
+        height: 50%;
+        background-color: aquamarine;
+        animation: slideInLeft 1s forwards infinite;
+        
+      }
+
+      .parent:hover .child{
+        animation-play-state: paused;
+      }
+
+      @keyframes slideInLeft {
+        0% {
+            transform: rotate(0turn);
+        }
+        33% {
+            transform: rotate(.33turn);
+        }
+        66% {
+            transform: rotate(.66turn);
+        }
+
+        100% {
+            transform: rotate(.100turn);
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+
+
+    <div class="parent">
+        <div class="child d-flex justify-content-center align-items-center">Box</div>
+    </div>
+
+
+    <div class="m-5"></div>
+    <div class="m-5"></div>
+    <div class="m-5"></div>
+
+
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-6">
+          <div class="box" style="width: 50px;">1</div>
+        </div>
+        <div class="col-6"><div class="box" style="width: 50px;">2</div></div>
+      </div>
+    </div>
+
+    <hr class="m-5">
+
+
+    <div class="container">
+        <table class="table table-warning">
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td>Anas</td>
+                    <td>Javed</td>
+                    <td>Web Mobile Apps</td>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>Raza</td>
+                    <td>Graphic Desing</td>
+                </tr>
+                <tr>
+                    <td>Anas</td>
+                    <td>Javed</td>
+                    <td>Web Mobile Apps</td>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>Raza</td>
+                    <td>Graphic Desing</td>
+                </tr>
+                <tr>
+                    <td>Anas</td>
+                    <td>Javed</td>
+                    <td>Web Mobile Apps</td>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>Raza</td>
+                    <td>Graphic Desing</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr class="m-5">
+
+
+    <div class="container">
+        <form action="#">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control is-invalid">
+            <div class="valid-feedback">valid</div>
+            <div class="invalid-feedback">Invalid Email</div>
+
+
+
+            
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="check">
+                <label for="check">Male</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="check">
+                <label for="check">Male</label>
+            </div>
+
+            <select class="form-select">
+                <option>Mehran</option>
+                <option>BMW</option>
+                <option>Suzuki</option>
+            </select>
+
+            <br>
+
+            <label for="email">Email</label>
+            <div class="input-group">
+                
+                <div class="input-group-text">$</div>
+                <input type="email" class="form-control">
+                <button class="btn btn-success">+</button>
+                <input type="email" class="form-control">
+                
+            </div>
+
+<br>
+
+            <div class="form-floating">
+                <input type="number"  id="age" class="form-control" placeholder="enter age">
+                <label for="age" >Age</label>
+            </div>
+            
+
+            <!-- <button>Submit</button> -->
+        </form>
+    </div>
+
+
+    <hr class="m-5">
+
+    <button class="btn btn-outline-success">Button</button>
+    <button class="btn btn-lg btn-warning">Button</button>
+    <button class="btn btn-sm btn-danger">Button</button>
+    <button class="btn btn-dark">Button</button>
+    <button class="btn btn-secondary">Button</button>
+<br>
+<br>
+    <div class="btn-group">
+        <button class="btn btn-outline-success" data-bs-toggle="button">Button</button>
+        <button class="btn btn-outline-warning">Button</button>
+    </div>
+
+
+    <hr class="m-5">
+
+    <hr class="m-5">
+
+
+    <div class="alert alert-danger alert-dismissible fade show">
+        <h1>Alert</h1>
+        <a href="#" class="alert-link">read more</a>
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+
+    <hr class="m-5">
+    <hr class="m-5">
+
+
+    <div class="card-group m-5">
+        <div class="card w-25">
+            <img class="card-image-top" src="https://via.placeholder.com/100.png/ffff11?"></img>
+            <div class="card-body">
+                <h2 class="card-title">Title</h2>
+                <span class="card-subtitle">Sub title</span>
+                <div class="card-text ">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae ipsam quia ut quidem non iure, accusantium necessitatibus praesentium sequi soluta, nemo velit, quae dolore fuga! Cum officia tempore numquam vero.
+                </div>
+            </div>
+        </div>
+        <div class="card w-25">
+            <img class="card-image-top" src="https://via.placeholder.com/100.png/ffff11?"></img>
+            <div class="card-body">
+                <h2 class="card-title">Title</h2>
+                <span class="card-subtitle">Sub title</span>
+                <div class="card-text ">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae ipsam quia ut quidem non iure, accusantium necessitatibus praesentium sequi soluta, nemo velit, quae dolore fuga! Cum officia tempore numquam vero.
+                </div>
+            </div>
+        </div>
+        <div class="card w-25">
+            <img class="card-image-top" src="https://via.placeholder.com/100.png/ffff11?"></img>
+            <div class="card-body">
+                <h2 class="card-title">Title</h2>
+                <span class="card-subtitle">Sub title</span>
+                <div class="card-text ">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae ipsam quia ut quidem non iure, accusantium necessitatibus praesentium sequi soluta, nemo velit, quae dolore fuga! Cum officia tempore numquam vero.
+                </div>
+            </div>
+        </div>
+        <div class="card w-25">
+            <img class="card-image-top" src="https://via.placeholder.com/100.png/ffff11?"></img>
+            <div class="card-body">
+                <h2 class="card-title">Title</h2>
+                <span class="card-subtitle">Sub title</span>
+                <div class="card-text ">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae ipsam quia ut quidem non iure, accusantium necessitatibus praesentium sequi soluta, nemo velit, quae dolore fuga! Cum officia tempore numquam vero.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr class="m-5">
+    <hr class="m-5">
+
+
+
+    <!-- modals -->
+    <div class="container">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Click to open</button>
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h1 class="modal-header">Header
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </h1>
+                        <div class="modal-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio temporibus tempore porro perferendis culpa laborum magnam fuga qui. Debitis dolor quo sint recusandae repudiandae qui doloremque alias excepturi aut dolorem.
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="m-5">
+    <hr class="m-5">
+
+
+    <!-- Collapse -->
+    <div class="container">
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".row">Toggle</button>
+
+        <div class="row collapse " id="row">
+            <div class="col">
+                <div class="box">box</div>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="col">
+                <div class="box">box</div>
+            </div>
+        </div>
+        <div class="row collapse" id="row">
+            <div class="col">
+                <div class="box">box</div>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="col">
+                <div class="box">box</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr class="m-5">
+    <hr class="m-5">
+
+
+    <!-- Navvar -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Logo</a>
+            
+            <button class="navbar-toggler">
+                <div class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#nav"></div>
+            </button>
+            <ul class="navbar-nav collapse navbar-collapse" id="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <hr class="m-5">
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
